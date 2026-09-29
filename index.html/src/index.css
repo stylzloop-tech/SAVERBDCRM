@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-bangla: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F7F2;
+    color: #1D2420;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+  }
+
+  .font-bn {
+    font-family: var(--font-bangla);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F6045;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #123C2B;
+}
+
+/* Custom glass and gold glow */
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(to right, #C8A96B, #E9DFC9, #C8A96B) 1;
+}
+
